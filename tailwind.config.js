@@ -15,8 +15,13 @@ function withOpacityValue(cssVariable) {
   }
 }
 
-export default {
-  content: [],
+module.exports = {
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './composables/**/*.{js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+  ],
 
   darkMode: 'class',
   corePlugins: {
