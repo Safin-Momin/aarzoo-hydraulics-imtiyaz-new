@@ -20,7 +20,7 @@ const perks = [
 </script>
 
 <template>
-  <div class="border-t border-gray-200 bg-gray-50">
+  <div class="border-t border-gray-200 bg-secondary">
     <h2 id="perks-heading" class="sr-only">
       Our perks
     </h2>
@@ -37,10 +37,10 @@ const perks = [
             </div>
           </div>
           <div class="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
-            <h3 class="text-base font-medium text-gray-900">
+            <h3 class="text-base font-medium text-brown">
               {{ perk.name }}
             </h3>
-            <p class="mt-3 text-sm text-gray-500">
+            <p class="mt-3 text-sm text-primary-500">
               {{ perk.description }}
             </p>
           </div>
