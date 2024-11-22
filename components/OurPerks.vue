@@ -25,7 +25,7 @@ const perks = [
       Our perks
     </h2>
 
-    <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 lg:px-8">
       <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
         <div
           v-for="perk in perks" :key="perk.name"
@@ -37,7 +37,7 @@ const perks = [
             </div>
           </div>
           <div class="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
-            <h3 class="text-base font-medium text-gray-900">
+            <h3 class="text-base font-medium text-primary-900">
               {{ perk.name }}
             </h3>
             <p class="mt-3 text-sm text-gray-500">

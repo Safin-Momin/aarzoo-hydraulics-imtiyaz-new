@@ -14,14 +14,14 @@ socialHead({
   <NuxtLayout name="main">
     <!-- whatsapp icon -->
     <div class="fixed right-4 bottom-4 z-50 whatsapp">
-      <a
-        href="https://wa.me/9558762484?text=Hello%20I%20am%20interested%20in%20your%20products%20and%20would%20like%20to%20discuss%20further."
+      <NuxtLink
+        to="https://wa.me/9558762484?text=Hello%20I%20am%20interested%20in%20your%20products%20and%20would%20like%20to%20discuss%20further."
         target="_blank"
         class="whatsapp-button"
         aria-label="Chat on WhatsApp"
       >
         <WhatsappIcon class="h-10 sm:h-16 w-10 sm:w-16" />
-      </a>
+      </NuxtLink>
     </div>
 
     <main>
@@ -30,7 +30,7 @@ socialHead({
         <Testimonials />
       </div>
 
-      <section aria-labelledby="companies-info" class="py-24 sm:py-32">
+      <section aria-labelledby="companies-info" class="py-16 sm:py-24">
         <CompaniesInfo :limit="4" />
       </section>
 
