@@ -57,17 +57,18 @@ const displayedCompanies = computed(() => {
 <template>
   <div class="mx-auto max-w-7xl w-full px-4 sm:px-6">
     <div class="md:flex md:items-center md:justify-between mb-6">
-      <h2 id="favorites-heading" class="text-xl sm:text-2xl font-bold tracking-tight text-primary-500">
+      <h2 id="favorites-heading" class="text-xl sm:text-2xl font-semibold tracking-tight text-primary-500">
         Trusted Partners
       </h2>
-      <a
+      
+      <NuxtLink
         v-if="props.limit"
-        href="/companies"
+        to="/companies"
         class="font-medium text-primary-600 hover:text-primary-500 md:block"
       >
         Shop the collection
         <span aria-hidden="true"> &rarr;</span>
-      </a>
+      </NuxtLink>
     </div>
 
     <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 md:gap-6">

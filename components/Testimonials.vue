@@ -15,12 +15,12 @@ const testimonials = [
 </script>
 
 <template>
-  <div v-if="testimonials?.length" class="testimonial-carousel relative z-50">
+  <div v-if="testimonials?.length" class="testimonial-carousel relative">
     <div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 my-8">
         <Carousel :wrap-around="true">
-          <Slide v-for="currentTestimonial in testimonials" :key="currentTestimonial">
-            <img :src="currentTestimonial.img" alt="Testimonial" class="!w-full !h-96 object-cover">
+          <Slide v-for="currentTestimonial in testimonials" :key="currentTestimonial" >
+            <img :src="currentTestimonial.img" alt="Testimonial" class="!w-full !h-96 object-cover rounded-xl">
           </Slide>
 
           <template #addons>
