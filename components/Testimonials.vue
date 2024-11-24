@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
-import shipImg from '~/assets/images/ship.jpg'
+import shipImg from '~/assets/images/card-logo.png'
 import svg1 from '~/assets/images/logo.png'
 import 'vue3-carousel/dist/carousel.css'
 

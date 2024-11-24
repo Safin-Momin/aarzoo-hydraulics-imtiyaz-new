@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen w-full">
     <!-- Header -->
-    <!-- <Header /> -->
+    <Header />
 
     <!-- Main Content -->
     <div class="flex-1">

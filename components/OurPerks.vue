@@ -25,7 +25,7 @@ const perks = [
       Our perks
     </h2>
 
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
       <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
         <div
           v-for="perk in perks" :key="perk.name"

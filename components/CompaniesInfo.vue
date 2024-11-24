@@ -2,8 +2,6 @@
 import { CompaniesStub } from '~/stub/companies'
 
 import logo from '~/assets/images/logo.png'
-import shipYard from '~/assets/images/shipyard.jpg'
-import shipOutline from '~/assets/images/ship-outline.png'
 
 const props = defineProps({
   limit: {
@@ -23,49 +21,6 @@ const displayedCompanies = computed(() => {
 
 <template>
   <div class="mx-auto max-w-7xl w-full px-4 sm:px-6 pb-16 sm:pb-24">
-    <!-- <div class="flex">
-    <div>
-      <div class="head">What We Do</div>
-
-      <h2 class="title"><strong>Hydraulic Pump, Motors Stockiest</strong></h2>
-
-      <div class="row">
-        <div class="col-md-7 col-sm-12">
-          <div class="heading-seperator"><span></span></div>
-
-          <p>
-            H.M.Traders specialized in supply &amp; export of New &amp; reconditioned
-            Hydraulic pumps,motors &amp; their spares. We endeavour providing quick,
-            efficient &amp; reliable service. We are one of the largest stocklists of this
-            kind in India. We also supply high quality Marine Equipment &amp; Spares. We
-            have benchmark in delivering products to more than 40 countries around the
-            world.
-          </p>
-
-          <ul>
-            <li>
-              <a href=""
-                ><img
-                  :src="shipOutline"
-                  alt="Used Hydraulic Pumps Suppliers Alang"
-                />Marine &amp; Offshore Hydraulic, Industrial &amp; Earth Moving
-                Hydraulic.</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-        <div class="col-md-5 hidden-xs hidden-sm">
-          <img
-            :src="shipYard"
-            alt="Reconditioned Hydraulic Motors Supplier Alang"
-            class="img-responsive sldimg"
-          />
-        </div>
-      </div>
-    </div> -->
-
     <div class="flex items-center justify-between gap-x-4 gap-y-2 flex-wrap mb-6">
       <h2
         id="favorites-heading"

@@ -16,24 +16,16 @@
         </p>
 
         <div class="flex justify-center md:justify-start space-x-4 sm:space-x-6">
-        <NuxtLink to="https://facebook.com/yourpage" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
+        <NuxtLink to="https://www.facebook.com/share/19gDVDqFF7/?mibextid=LQQJ4d&direct_share_include_copy=1&fb_entity_type=unknown" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
           <FacebookIcon class="h-6 w-6" />
         </NuxtLink>
 
-        <NuxtLink to="https://instagram.com/yourpage" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
+        <NuxtLink to="https://www.instagram.com/aarzoo_hydraulic_?igsh=b3M1ZGMwaDB1MW5o" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
           <InstagramIcon class="h-6 w-6" />
         </NuxtLink>
 
-        <NuxtLink to="https://twitter.com/yourpage" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
+        <NuxtLink to="https://x.com/AarzooHydraulic" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
           <TwitterIcon class="h-6 w-6" />
-        </NuxtLink>
-
-        <NuxtLink to="https://github.com/yourpage" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
-          <GithubIcon class="h-6 w-6" />
-        </NuxtLink>
-
-        <NuxtLink to="https://github.com/yourpage" class="text-primary-400 hover:text-primary-600" target="_blank" rel="noopener noreferrer">
-          <YoutubeIcon class="h-6 w-6" />
         </NuxtLink>
       </div>
       </div>
@@ -64,10 +56,10 @@
           <li>
             <strong>Email:</strong>
             <NuxtLink
-              to="mailto:sales@aarzoohydraulics.com"
+              to="mailto:aarzoohydraulic@gmail.com"
               class="text-primary-400 hover:text-primary-800"
             >
-              sales@aarzoohydraulics.com
+            aarzoohydraulic@gmail.com
             </NuxtLink>
           </li>
           <li>
