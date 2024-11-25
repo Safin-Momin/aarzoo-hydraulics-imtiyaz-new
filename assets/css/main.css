@@ -11,6 +11,10 @@
   --color-primary-900: 4, 13, 20;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Spline Sans';
   font-style: normal;

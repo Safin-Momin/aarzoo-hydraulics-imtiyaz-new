@@ -13,20 +13,13 @@ const navigation = {
 }
 
 const currentActiveMenu = computed(() => {
-  const currentPath = route.path
-  const currentPage = navigation.pages.find((page) => page.href === currentPath)
+  const currentHash = route.hash.replace('#', '')
+  const currentPage = navigation.pages.find((page) => page.activeMenu === currentHash)
   return currentPage ? currentPage.activeMenu : null
 })
 
 const getTitle = (page: any) => {
   return page.href === '/' ? 'Aarzoo Hydraulic' : page.name
-}
-
-const scrollToSection = (sectionId: string) => {
-  const section = document.getElementById(sectionId)
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' })
-  }
 }
 </script>
 
@@ -62,8 +55,8 @@ const scrollToSection = (sectionId: string) => {
               <NuxtLink
                 v-for="page in navigation.pages"
                 :key="page.name"
-                :href="`#${page.activeMenu}`"
                 :title="getTitle(page)"
+                :href="`#${page.activeMenu}`"
                 class="flex-none group relative block transition duration-300 px-2.5 py-2 hover:text-primary-600"
                 :class="[
                   page.activeMenu === currentActiveMenu
@@ -71,7 +64,6 @@ const scrollToSection = (sectionId: string) => {
                     : 'text-secondary hover:text-primary-600',
                 ]"
                 :aria-current="page.activeMenu === currentActiveMenu ? 'page' : undefined"
-                @click.prevent="scrollToSection(page.activeMenu)"
                 >{{ page.name }}
                 <span
                   class="absolute inset-x-1 h-px bg-gradient-to-r from-primary-500/0 from-10% via-primary-400 to-primary-500/0 to-90% transition duration-300 bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"

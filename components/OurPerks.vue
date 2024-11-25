@@ -10,7 +10,7 @@ const perks = [
     name: 'All year discount',
     imageUrl: '../images/icon-gift-card-light.svg',
     description:
-      'Looking for a deal? You can use the code "ALLYEAR" at checkout and get money off all year round.',
+      'Looking for a deal? You can use the necessary code at checkout and get money off all year round.',
   },
   {
     name: 'For the planet',
