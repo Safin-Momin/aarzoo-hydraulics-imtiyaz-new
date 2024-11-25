@@ -9,31 +9,34 @@ const perks = [
   {
     name: 'All year discount',
     imageUrl: '../images/icon-gift-card-light.svg',
-    description: 'Looking for a deal? You can use the code "ALLYEAR" at checkout and get money off all year round.',
+    description:
+      'Looking for a deal? You can use the code "ALLYEAR" at checkout and get money off all year round.',
   },
   {
     name: 'For the planet',
     imageUrl: '../images/icon-planet-light.svg',
-    description: 'We’ve pledged 1% of sales to the preservation and restoration of the natural environment.',
+    description:
+      'We’ve pledged 1% of sales to the preservation and restoration of the natural environment.',
   },
 ]
 </script>
 
 <template>
   <div class="border-t border-gray-200 bg-gray-50">
-    <h2 id="perks-heading" class="sr-only">
-      Our perks
-    </h2>
+    <h2 id="perks-heading" class="sr-only">Our perks</h2>
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
-      <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
+      <div
+        class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0"
+      >
         <div
-          v-for="perk in perks" :key="perk.name"
+          v-for="perk in perks"
+          :key="perk.name"
           class="text-center md:flex md:items-start md:text-left lg:block lg:text-center"
         >
           <div class="md:flex-shrink-0">
             <div class="flow-root">
-              <img class="-my-1 mx-auto h-24 w-auto" :src="perk.imageUrl" alt="">
+              <img class="-my-1 mx-auto h-24 w-auto" :src="perk.imageUrl" alt="" />
             </div>
           </div>
           <div class="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">

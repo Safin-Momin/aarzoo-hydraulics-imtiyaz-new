@@ -9,7 +9,7 @@ interface seoParams {
 
 export function socialHead(params: seoParams = {}) {
   const {
-    site_name = 'Aarzoo Hydraulics',
+    site_name = 'Aarzoo Hydraulic',
     title,
     description,
     image = '~/assets/images/card-logo.png',

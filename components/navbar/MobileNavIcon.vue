@@ -17,15 +17,13 @@ const props = defineProps({
   >
     <path
       d="M0 1H14M0 7H14M0 13H14"
-      class="origin-center transition-all" :class="[
-        open && 'scale-90 opacity-0',
-      ]"
+      class="origin-center transition-all"
+      :class="[open && 'scale-90 opacity-0']"
     />
     <path
       d="M2 2L12 12M12 2L2 12"
-      class="origin-center transition-all" :class="[
-        !open && 'scale-150 opacity-0',
-      ]"
+      class="origin-center transition-all"
+      :class="[!open && 'scale-150 opacity-0']"
     />
   </svg>
 </template>

@@ -25,8 +25,8 @@ export default defineNuxtConfig({
     filename: 'sw.ts',
     registerType: 'autoUpdate',
     manifest: {
-      name: 'Aarzoo Hydraulics - New & Reconditioned Hydraulic Pumps, Motors, Valves',
-      short_name: 'Aarzoo Hydraulics',
+      name: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
+      short_name: 'Aarzoo Hydraulic',
       description: 'Global supplier of new and reconditioned hydraulic pumps, motors, valves, and spares. Custom solutions for industrial needs. Reliable worldwide shipping.',
       theme_color: '#e0dedf',
       icons: [
@@ -71,7 +71,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Aarzoo Hydraulics - New & Reconditioned Hydraulic Pumps, Motors, Valves',
+      title: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
 
       link: [{ rel: 'icon', type: 'image/png', href: '/favicons/favicon.ico' }],
 
@@ -111,12 +111,12 @@ export default defineNuxtConfig({
         {
           hid: 'og:site_name',
           property: 'og:site_name',
-          content: 'Aarzoo Hydraulics',
+          content: 'Aarzoo Hydraulic',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Aarzoo Hydraulics - New & Reconditioned Hydraulic Pumps, Motors, Valves',
+          content: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
         },
         {
           hid: 'og:description',
@@ -133,7 +133,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: 'Aarzoo Hydraulics - New & Reconditioned Hydraulic Pumps, Motors, Valves',
+          content: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
         },
         {
           hid: 'twitter:description',

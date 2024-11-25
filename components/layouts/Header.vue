@@ -14,21 +14,20 @@ const navigation = {
 
 const currentActiveMenu = computed(() => {
   const currentPath = route.path
-  const currentPage = navigation.pages.find(page => page.href === currentPath)
+  const currentPage = navigation.pages.find((page) => page.href === currentPath)
   return currentPage ? currentPage.activeMenu : null
 })
 
 const getTitle = (page: any) => {
-  return page.href === '/' ? 'Aarzoo Hydraulics' : page.name
+  return page.href === '/' ? 'Aarzoo Hydraulic' : page.name
 }
 
 const scrollToSection = (sectionId: string) => {
-  const section = document.getElementById(sectionId);
+  const section = document.getElementById(sectionId)
   if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({ behavior: 'smooth' })
   }
-};
-
+}
 </script>
 
 <template>
@@ -36,10 +35,16 @@ const scrollToSection = (sectionId: string) => {
     <div>
       <div class="relative flex h-12 lg:h-14 items-center justify-between my-6 sm:my-10">
         <div class="absolute inset-y-0 flex items-center">
-          <div class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
+          <div
+            class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start"
+          >
             <div class="flex flex-shrink-0 items-center gap-x-2">
               <NuxtLink to="/">
-                <img class="h-28 sm:h-40 aspect-1" :src="logo" alt="Aarzoo Hydraulics logo">
+                <img
+                  class="h-28 sm:h-40 aspect-1"
+                  :src="logo"
+                  alt="Aarzoo Hydraulic logo"
+                />
               </NuxtLink>
             </div>
           </div>
@@ -55,7 +60,10 @@ const scrollToSection = (sectionId: string) => {
           >
             <div class="flex space-x-4">
               <NuxtLink
-                v-for="page in navigation.pages" :key="page.name" :href="`#${page.activeMenu}`" :title="getTitle(page)"
+                v-for="page in navigation.pages"
+                :key="page.name"
+                :href="`#${page.activeMenu}`"
+                :title="getTitle(page)"
                 class="flex-none group relative block transition duration-300 px-2.5 py-2 hover:text-primary-600"
                 :class="[
                   page.activeMenu === currentActiveMenu
@@ -64,14 +72,18 @@ const scrollToSection = (sectionId: string) => {
                 ]"
                 :aria-current="page.activeMenu === currentActiveMenu ? 'page' : undefined"
                 @click.prevent="scrollToSection(page.activeMenu)"
-              >{{ page.name }}
+                >{{ page.name }}
                 <span
                   class="absolute inset-x-1 h-px bg-gradient-to-r from-primary-500/0 from-10% via-primary-400 to-primary-500/0 to-90% transition duration-300 bottom-0.5 opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"
-                  :class="{ 'opacity-100 scale-x-100': page.activeMenu === currentActiveMenu }"
+                  :class="{
+                    'opacity-100 scale-x-100': page.activeMenu === currentActiveMenu,
+                  }"
                 />
                 <span
                   class="overflow-hidden absolute inset-0 transition origin-bottom duration-300 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"
-                  :class="{ 'opacity-100 scale-100': page.activeMenu === currentActiveMenu }"
+                  :class="{
+                    'opacity-100 scale-100': page.activeMenu === currentActiveMenu,
+                  }"
                 >
                   <span
                     class="absolute inset-x-4 -bottom-2 h-full bg-gradient-to-t from-primary-500/30 to-transparent blur rounded-t-full"
@@ -83,11 +95,16 @@ const scrollToSection = (sectionId: string) => {
         </div>
 
         <div class="hidden lg:flex w-full justify-end">
-          <NuxtLink to="https://wa.me/9558762484?text=Hello%20I%20am%20interested%20in%20your%20products%20and%20would%20like%20to%20discuss%20further." target="_blank">
+          <NuxtLink
+            to="https://wa.me/9558762484?text=Hello%20I%20am%20interested%20in%20your%20products%20and%20would%20like%20to%20discuss%20further."
+            target="_blank"
+          >
             <button
               class="relative m-auto flex justify-center items-center py-1.5 px-4 transition-all border-none bg-none cursor-pointer before:content-[''] before:absolute before:top-0 before:left-0 before:block before:rounded-[50px] before:bg-primary-300 before:w-10 before:h-10 before:transition-all before:duration-300 before:hover:w-full before:hover:bg-primary-300 active:scale-95 cta"
             >
-              <span class="inline relative text-lg text-secondary tracking-wider">Let's Connect</span>
+              <span class="inline relative text-lg text-secondary tracking-wider"
+                >Let's Connect</span
+              >
               <svg class="w-4 h-2.5" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5" />
                 <polyline points="8 1 12 5 8 9" />

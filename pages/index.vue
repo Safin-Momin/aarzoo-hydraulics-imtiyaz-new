@@ -2,11 +2,12 @@
 import Testimonials from '~/components/Testimonials.vue'
 import CompaniesInfo from '~/components/CompaniesInfo.vue'
 import OurPerks from '~/components/OurPerks.vue'
-import AboutUs from '~/components/AboutUs.vue';
+import AboutUs from '~/components/AboutUs.vue'
 
 socialHead({
-  title: 'Aarzoo Hydraulics - New & Reconditioned Hydraulic Pumps, Motors, Valves',
-  description: 'Global supplier of new and reconditioned hydraulic pumps, motors, valves, and spares. Custom solutions for industrial needs. Reliable worldwide shipping.',
+  title: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
+  description:
+    'Global supplier of new and reconditioned hydraulic pumps, motors, valves, and spares. Custom solutions for industrial needs. Reliable worldwide shipping.',
   image: '~/assets/images/card-logo.png',
 })
 </script>
@@ -31,7 +32,7 @@ socialHead({
         <Testimonials />
       </div>
 
-      <section aria-labelledby="about-us" id="about"class="py-16 sm:py-24">
+      <section aria-labelledby="about-us" id="about" class="py-16 sm:py-24">
         <AboutUs />
       </section>
 
@@ -46,9 +47,8 @@ socialHead({
   </NuxtLayout>
 </template>
 
-
 <style scoped>
-.whatsapp{
+.whatsapp {
   animation: animate 2s infinite alternate ease-in-out;
 }
 

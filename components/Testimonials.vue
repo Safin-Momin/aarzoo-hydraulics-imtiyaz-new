@@ -18,9 +18,18 @@ const testimonials = [
   <div v-if="testimonials?.length" class="testimonial-carousel relative">
     <div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 my-8">
-        <Carousel :wrap-around="true" :autoplay="3000" :transition="1000" :pause-autoplay-on-hover="true">
-          <Slide v-for="currentTestimonial in testimonials" :key="currentTestimonial" >
-            <img :src="currentTestimonial.img" alt="Testimonial" class="!w-full !h-96 object-cover rounded-xl">
+        <Carousel
+          :wrap-around="true"
+          :autoplay="3000"
+          :transition="1000"
+          :pause-autoplay-on-hover="true"
+        >
+          <Slide v-for="currentTestimonial in testimonials" :key="currentTestimonial">
+            <img
+              :src="currentTestimonial.img"
+              alt="Testimonial"
+              class="!w-full !h-96 object-cover rounded-xl"
+            />
           </Slide>
 
           <template #addons>
@@ -33,15 +42,7 @@ const testimonials = [
 </template>
 
 <style type="scss">
-  .testimonial-carousel .carousel__pagination-button::after {
-    @apply w-2 h-2 rounded-full;
-  }
-/*
-  .testimonial-carousel {
-    --vc-pgn-background-color: white !important;
-  }
-
-  .carousel_pagination-button:hover::after, .carousel_pagination-button--active::after {
-    @apply bg-purple;
-  } */
+.testimonial-carousel .carousel__pagination-button::after {
+  @apply w-2 h-2 rounded-full;
+}
 </style>
