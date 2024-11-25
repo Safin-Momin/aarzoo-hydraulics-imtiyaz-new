@@ -3,10 +3,10 @@
 <template>
   <footer class="text-primary-900 border-t border-gray-200 px-4 sm:px-6">
     <div
-      class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left py-16 sm:py-24"
+      class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center md:text-left py-16 sm:py-24"
     >
       <!-- Know Us Section -->
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-2 sm:gap-6">
         <h3 class="text-lg font-semibold">KNOW US</h3>
         <p class="text-sm leading-relaxed">
           Aarzoo Hydraulic is specialized in supply & export of new and recondition
@@ -15,7 +15,7 @@
           stockiest of marine & industrial hydraulic pumps, motors & spares.
         </p>
 
-        <div class="flex justify-center md:justify-start space-x-4 sm:space-x-6">
+        <div class="flex justify-center md:justify-start space-x-4 sm:space-x-6 mt-1 sm:mt-0">
           <NuxtLink
             to="https://www.facebook.com/share/19gDVDqFF7/?mibextid=LQQJ4d&direct_share_include_copy=1&fb_entity_type=unknown"
             class="text-primary-400 hover:text-primary-600"
@@ -46,9 +46,9 @@
       </div>
 
       <!-- Direct Links Section -->
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-2 sm:gap-6">
         <h3 class="text-lg font-semibold">DIRECT LINKS</h3>
-        <ul class="space-y-4 text-sm">
+        <ul class="space-y-2 sm:space-y-6 text-sm">
           <li>
             <NuxtLink to="/">Home</NuxtLink>
           </li>
@@ -67,13 +67,13 @@
       </div>
 
       <!-- Reach Us Section -->
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-2 sm:gap-6">
         <h3 class="text-lg font-semibold">REACH US</h3>
         <p class="text-sm">
           Madhiya Rd, near Safal Marine Motors, Kumbharwada, Bhavnagar, Gujarat 364001,
-          India
+          India.
         </p>
-        <ul class="space-y-4">
+        <ul class="space-y-2 sm:space-y-6">
           <li>
             <strong>Email:</strong>
             <NuxtLink

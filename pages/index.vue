@@ -32,7 +32,7 @@ socialHead({
         <Testimonials />
       </div>
 
-      <section aria-labelledby="about-us" id="about" class="py-16 sm:py-24">
+      <section aria-labelledby="about-us" id="about" class="sm:py-24">
         <AboutUs />
       </section>
 

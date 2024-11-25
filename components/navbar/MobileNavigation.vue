@@ -14,8 +14,8 @@ const navigation = {
 }
 
 const currentActiveMenu = computed(() => {
-  const currentPath = route.path
-  const currentPage = navigation.pages.find((page) => page.href === currentPath)
+  const currentHash = route.hash.replace('#', '')
+  const currentPage = navigation.pages.find((page) => page.activeMenu === currentHash)
   return currentPage ? currentPage.activeMenu : null
 })
 
@@ -26,7 +26,7 @@ const getTitle = (page: any) => {
 
 <template>
   <Popover>
-    <template #default="{ open }">
+    <template #default="{ open, close }">
       <PopoverButton
         class="relative z-10 flex h-8 w-8 items-center justify-center ring-0 outline-none"
         aria-label="Toggle Navigation"
@@ -54,13 +54,13 @@ const getTitle = (page: any) => {
       >
         <PopoverPanel
           v-if="open"
-          class="absolute inset-x-0 top-full mt-8 flex origin-top flex-col rounded-2xl bg-black p-4 text-lg tracking-tight shadow-xl border border-secondary/10"
+          class="absolute inset-x-0 top-full mt-8 flex origin-top flex-col rounded-2xl bg-primary-300 p-4 text-lg tracking-tight shadow-xl border border-secondary/10"
         >
           <div class="space-y-1 p-2">
             <NuxtLink
               v-for="page in navigation.pages"
               :key="page.name"
-              :href="page.href"
+              :href="`#${page.activeMenu}`"
               :title="getTitle(page)"
               class="flex-none group relative block transition duration-300 px-3 py-2.5 hover:text-primary-600 text-center"
               :class="[
@@ -69,6 +69,7 @@ const getTitle = (page: any) => {
                   : 'text-secondary hover:text-primary-600',
               ]"
               :aria-current="page.activeMenu === currentActiveMenu ? 'page' : undefined"
+              @click.prevent="() => { close(); window.location.hash = page.activeMenu }"
             >
               {{ page.name }}
             </NuxtLink>

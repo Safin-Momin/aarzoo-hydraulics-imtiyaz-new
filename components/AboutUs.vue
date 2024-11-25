@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Shipyard from '~/assets/images/shipyard.jpg'
+import shipOutline from '~/assets/images/ship-outline.png'
 </script>
 
 <template>
@@ -20,9 +21,11 @@ import Shipyard from '~/assets/images/shipyard.jpg'
           supply high-quality Marine Equipment & Spares. We have benchmarked in delivering
           products to more than 40 countries around the world.
         </p>
-        <p class="font-semibold">
-          Marine & Offshore Hydraulic, Industrial & Earth Moving Hydraulic.
-        </p>
+
+        <div class="flex gap-4 items-center">
+          <img :src="shipOutline" alt="Ship SVG" />
+          <p>Marine & Offshore Hydraulic, Industrial & Earth Moving Hydraulic.</p>
+        </div>
       </div>
 
       <!-- Right Image Content -->

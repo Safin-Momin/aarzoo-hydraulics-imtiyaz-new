@@ -36,7 +36,7 @@ const perks = [
         >
           <div class="md:flex-shrink-0">
             <div class="flow-root">
-              <img class="-my-1 mx-auto h-24 w-auto" :src="perk.imageUrl" alt="" />
+              <img class="-my-1 mx-auto h-24 w-auto" :src="perk.imageUrl" alt="Our Perks" />
             </div>
           </div>
           <div class="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
