@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import Shipyard from '~/assets/images/shipyard.jpg'
+import shipImg from '~/assets/images/about-us-ship.png'
 import shipOutline from '~/assets/images/ship-outline.png'
 </script>
 
 <template>
   <section class="bg-primary-500 text-white mt-20">
-    <div
-      class="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8 px-4 sm:px-6 py-16 lg:py-24 relative"
-    >
+    <div class="mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8 px-4 sm:px-6 py-16 lg:py-24 relative">
       <!-- Left Content -->
-      <div class="md:w-1/2">
+      <div class="w-full lg:w-1/2">
         <h3 class="uppercase text-primary-300 md:text-lg">What we do</h3>
         <h2 class="text-2xl md:text-4xl font-semibold mb-4">
           Hydraulic Pump, Motors Stockiest
@@ -29,15 +27,23 @@ import shipOutline from '~/assets/images/ship-outline.png'
       </div>
 
       <!-- Right Image Content -->
-      <div class="h-full md:w-1/2">
-        <div class="lg:absolute lg:-top-6 lg:-bottom-6 xl:-top-14 xl:-bottom-14 right-6">
+      <div class="h-full lg:w-5/12 relative lg:absolute lg:right-6">
+        <p
+          class="absolute bottom-2 sm:bottom-4 lg:-bottom-6 z-10 text-center bg-primary-400 text-white p-2 sm:p-4 rounded-xl mx-2 sm:mx-4 text-sm sm:text-base">
+          We are based at Asia’s biggest Ship Recycling Yard at ALANG, Gujarat
+          (INDIA), we are stocking & sourcing used & unused hydraulic motors & pumps
+          from ship recycling units.
+        </p>
+
+        <div class="lg:absolute inset-0 -top-10 -bottom-10">
           <img
-            :src="Shipyard"
+            :src="shipImg"
             alt="Shipping Containers"
-            class="rounded-xl shadow-lg w-full h-full"
+            class="w-full h-full object-cover rounded-xl shadow-lg"
           />
         </div>
       </div>
     </div>
   </section>
 </template>
+

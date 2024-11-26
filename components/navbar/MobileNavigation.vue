@@ -69,7 +69,7 @@ const getTitle = (page: any) => {
                   : 'text-secondary hover:text-primary-600',
               ]"
               :aria-current="page.activeMenu === currentActiveMenu ? 'page' : undefined"
-              @click.prevent="() => { close(); window.location.hash = page.activeMenu }"
+              @click.prevent="() => { close(); }"
             >
               {{ page.name }}
             </NuxtLink>

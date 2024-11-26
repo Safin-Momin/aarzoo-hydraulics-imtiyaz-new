@@ -1,15 +1,35 @@
 <script lang="ts" setup>
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
-import shipImg from '~/assets/images/card-logo.png'
-import svg1 from '~/assets/images/logo.png'
 import 'vue3-carousel/dist/carousel.css'
+import testimonial1 from '~/assets/images/testimonials/1.jpg'
+import testimonial2 from '~/assets/images/testimonials/2.jpg'
+import testimonial3 from '~/assets/images/testimonials/3.jpg'
+import testimonial4 from '~/assets/images/testimonials/4.jpg'
+import testimonial5 from '~/assets/images/testimonials/5.jpg'
+import testimonial6 from '~/assets/images/testimonials/6.jpg'
+import testimonial7 from '~/assets/images/testimonials/7.jpg'
 
 const testimonials = [
   {
-    img: shipImg,
+    img: testimonial1,
   },
   {
-    img: svg1,
+    img: testimonial2,
+  },
+  {
+    img: testimonial3,
+  },
+  {
+    img: testimonial4,
+  },
+  {
+    img: testimonial5,
+  },
+  {
+    img: testimonial6,
+  },
+  {
+    img: testimonial7,
   },
 ]
 </script>
@@ -28,7 +48,7 @@ const testimonials = [
             <img
               :src="currentTestimonial.img"
               alt="Testimonial"
-              class="!w-full !h-96 object-cover rounded-xl"
+              class="!w-full !h-96 sm:!h-[500px] object-cover rounded-xl"
             />
           </Slide>
 
