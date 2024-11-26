@@ -83,9 +83,12 @@
               aarzoohydraulic@gmail.com
             </NuxtLink>
           </li>
-          <li>
+          <li class="space-x-1">
             <strong>Phone:</strong>
-            +91 9558762484, 9924702860
+            <span>
+              <a href="tel:+919558762484">+91 95587 62484</a>,
+              <a href="tel:+919924702860">99247 02860</a>
+            </span>
           </li>
         </ul>
       </div>
