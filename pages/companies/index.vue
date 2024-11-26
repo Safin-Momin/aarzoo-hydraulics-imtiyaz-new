@@ -10,7 +10,7 @@ socialHead({
 
 <template>
   <NuxtLayout name="main">
-    <section aria-labelledby="companies-info" class="mt-8">
+    <section aria-labelledby="companies-info">
       <CompaniesInfo />
     </section>
   </NuxtLayout>

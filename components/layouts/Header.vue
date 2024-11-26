@@ -21,6 +21,8 @@ const currentActiveMenu = computed(() => {
 const getTitle = (page: any) => {
   return page.href === '/' ? 'Aarzoo Hydraulic' : page.name
 }
+
+const isHomePage = computed(() => route.path === '/')
 </script>
 
 <template>
@@ -43,7 +45,7 @@ const getTitle = (page: any) => {
           </div>
         </div>
 
-        <div class="flex justify-end items-center w-full">
+        <div class="flex justify-end items-center w-full" v-if="isHomePage">
           <div class="lg:hidden z-50">
             <MobileNavigation />
           </div>
