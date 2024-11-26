@@ -4,7 +4,7 @@ import CompaniesInfo from '~/components/CompaniesInfo.vue'
 socialHead({
   title: 'Our Companies - Aarzoo Hydraulic',
   description: 'Explore all our trusted partners and the companies we work with.',
-  image: '~/assets/images/card-logo.png',
+  image: '/images/card-logo.png',
 })
 </script>
 

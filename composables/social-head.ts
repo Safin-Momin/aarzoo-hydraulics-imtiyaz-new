@@ -12,9 +12,9 @@ export function socialHead(params: seoParams = {}) {
     site_name = 'Aarzoo Hydraulic',
     title,
     description,
-    image = '~/assets/images/card-logo.png',
+    image = '/images/card-logo.png',
     card = 'summary_large_image',
-    twitter_id = '@safin5311',
+    twitter_id = '@AarzooHydraulic',
   } = params
 
   const urlParams = useRequestURL()

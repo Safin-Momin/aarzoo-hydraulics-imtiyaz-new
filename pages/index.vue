@@ -8,7 +8,7 @@ socialHead({
   title: 'Aarzoo Hydraulic - New & Reconditioned Hydraulic Pumps, Motors, Valves',
   description:
     'Global supplier of new and reconditioned hydraulic pumps, motors, valves, and spares. Custom solutions for industrial needs. Reliable worldwide shipping.',
-  image: '~/assets/images/card-logo.png',
+  image: '/images/card-logo.png',
 })
 </script>
 
